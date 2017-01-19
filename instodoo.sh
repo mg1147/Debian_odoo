@@ -71,7 +71,7 @@ sudo chown $OE_USER:$OE_USER /var/log/$OE_USER
 # Install Basic Dependencies
 #--------------------------------------------------
 echo -e "\n---- Install tool packages ----"
-sudo apt-get install wget git python-pip python-imaging python-setuptools python-dev libxslt-dev libxml2-dev libldap2-dev libsasl2-dev node-less postgresql-server-dev-all -y
+sudo apt-get install wget git python-pip python-imaging python-setuptools python-dev libxslt-dev libxml2-dev libldap2-dev libsasl2-dev node-less postgresql-server-dev-all python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-passlib -y
 
 echo -e "\n---- Install wkhtml and place on correct place for ODOO 8 ----"
 sudo wget https://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb
