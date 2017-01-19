@@ -33,17 +33,17 @@ OE_CONFIG="$OE_USER-server"
 echo -e "\n---- Update Server ----"
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y locales
+#sudo apt-get install -y locales
 
 #--------------------------------------------------
 # Install PostgreSQL Server
 #--------------------------------------------------
-sudo dpkg-reconfigure locales
-sudo locale-gen C.UTF-8
-sudo /usr/sbin/update-locale LANG=C.UTF-8
+#sudo dpkg-reconfigure locales
+#sudo locale-gen C.UTF-8
+#sudo /usr/sbin/update-locale LANG=C.UTF-8
 
 echo -e "\n---- Set locales ----"
-echo 'LC_ALL=C.UTF-8' >> /etc/environment
+#echo 'LC_ALL=C.UTF-8' >> /etc/environment
 
 echo -e "\n---- Install PostgreSQL Server ----"
 sudo apt-get install postgresql -y
@@ -110,7 +110,8 @@ sudo easy_install pyPdf vatnumber pydot psycogreen suds ofxparse
 #--------------------------------------------------
 # Install Less
 #--------------------------------------------------
-sud wget -qO- https://deb.nodesource.com/setup | sudo bash -
+echo -e "\n---- Install Less packages ----"
+sudo wget -qO- https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install nodejs
 sudo npm install -g less less-plugin-clean-css
 
