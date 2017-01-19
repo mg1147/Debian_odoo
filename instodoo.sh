@@ -229,4 +229,8 @@ sudo chmod 755 $OE_HOME_EXT/start.sh
 # echo "Done! The ODOO server can be started with: service $OE_CONFIG start"
 wget https://download.jetbrains.com/python/pycharm-community-2016.3.2.tar.gz
 tar xfz pycharm-community-2016.3.2.tar.gz
+virtualenv /opt/odoo
+source /opt/odoo/bin/activate
+pip install requests
+
 
