@@ -112,7 +112,7 @@ sudo easy_install pyPdf vatnumber pydot psycogreen suds ofxparse
 #--------------------------------------------------
 echo -e "\n---- Install Less packages ----"
 sudo wget -qO- https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs
+sudo apt-get install nodejs -y
 sudo npm install -g less less-plugin-clean-css
 
 
